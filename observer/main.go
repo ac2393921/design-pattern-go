@@ -9,8 +9,6 @@ func main() {
 
 	ccd := observer.NewCurrentConditionsDisplay(wd)
 	o := observer.Observer(ccd)
-	// fmt.Printf("%T\n", ccd)
-	// fmt.Printf("%T\n", o)
 	wd.RegisterObserver(o)
 
 	wd.SetMeasurements(80, 65, 30.4)
