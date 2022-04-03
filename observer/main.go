@@ -1,16 +1,19 @@
 package main
 
 import (
-	"github.com/ac2393921/design-pattern-go/internal/observer"
+	"github.com/ac2393921/design-pattern-go/observer/internal/observer"
 )
 
 func main() {
-	wd := observer.WeatherData.NewWeatherData()
+	wd := observer.NewWeatherData()
 
-	currentConditionDisplay := NewCurrentConditionDisplay()
-	wd.RegisterObserver(currentConditionDisplay)
+	ccd := observer.NewCurrentConditionsDisplay(wd)
+	o := observer.Observer(ccd)
+	// fmt.Printf("%T\n", ccd)
+	// fmt.Printf("%T\n", o)
+	wd.RegisterObserver(o)
 
-	wd.setMeasurements(80, 65, 30.4)
-	wd.setMeasurements(82, 70, 29.2)
-	wd.setMeasurements(77, 90, 29.2)
+	wd.SetMeasurements(80, 65, 30.4)
+	wd.SetMeasurements(82, 70, 29.2)
+	wd.SetMeasurements(77, 90, 29.2)
 }
