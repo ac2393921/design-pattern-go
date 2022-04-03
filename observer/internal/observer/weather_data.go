@@ -30,7 +30,7 @@ func (wd *WeatherData) RemoveObserver(observer Observer) {
 
 func (wd *WeatherData) NotifyObservers() {
 	for _, o := range wd.observers {
-		o.update(wd.temperature, wd.humidity, wd.pressure)
+		o.Update(wd.temperature, wd.humidity, wd.pressure)
 	}
 }
 
