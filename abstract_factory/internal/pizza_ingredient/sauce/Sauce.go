@@ -1,4 +1,4 @@
-package pizza_ingredient
+package sauce
 
 type Source interface {
 	ToString() string

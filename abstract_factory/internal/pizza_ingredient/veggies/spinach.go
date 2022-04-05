@@ -1,4 +1,4 @@
-package pizza_ingredient
+package veggies
 
 type Spinach struct{}
 

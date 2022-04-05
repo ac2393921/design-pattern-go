@@ -1,4 +1,4 @@
-package pizza_ingredient
+package pepperoni
 
 type SlicedPepperoni struct{}
 

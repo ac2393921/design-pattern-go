@@ -1,4 +1,4 @@
-package pizza_ingredient
+package clams
 
 type FrozenClams struct{}
 
