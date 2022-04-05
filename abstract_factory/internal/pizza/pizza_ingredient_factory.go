@@ -11,7 +11,7 @@ import (
 
 type PizzaIngredientFactory interface {
 	CreateDough() dougth.Dough
-	CreateSouce() sauce.Sauce
+	CreateSauce() sauce.Sauce
 	CreateCheese() cheese.Cheese
 	CreateVeggies() []veggies.Veggies
 	CreatePepperoni() pepperoni.Pepperoni
