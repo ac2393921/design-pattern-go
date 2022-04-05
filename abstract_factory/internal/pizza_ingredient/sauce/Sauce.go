@@ -1,5 +1,5 @@
 package sauce
 
-type Source interface {
+type Sauce interface {
 	ToString() string
 }
