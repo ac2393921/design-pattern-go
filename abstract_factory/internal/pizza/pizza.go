@@ -16,7 +16,8 @@ type PizzaInterface interface {
 	Bake()
 	Cut()
 	Box()
-	GetName()
+	SetName(string)
+	GetName() string
 }
 
 type Pizza struct {

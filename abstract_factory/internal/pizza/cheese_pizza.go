@@ -9,10 +9,10 @@ type CheesePizza struct {
 	factory PizzaIngredientFactory
 }
 
-func NewCheesePizza(pif PizzaIngredientFactory) *CheesePizza {
+func NewCheesePizza(factory PizzaIngredientFactory) *CheesePizza {
 	cp := &CheesePizza{
 		Pizza:   Pizza{},
-		factory: pif,
+		factory: factory,
 	}
 	return cp
 }
